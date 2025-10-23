@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Users, UserPlus, Home } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -23,7 +24,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </h1>
             </Link>
             
-            <nav className="flex gap-2">
+            <nav className="flex items-center gap-2">
               {navItems.map(({ path, label, icon: Icon }) => (
                 <Link
                   key={path}
@@ -41,6 +42,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <span className="hidden sm:inline">{label}</span>
                 </Link>
               ))}
+              <ThemeToggle />
             </nav>
           </div>
         </div>
