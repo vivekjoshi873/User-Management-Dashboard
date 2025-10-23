@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# User Management Dashboard
 
-## Project info
+A modern, responsive user management dashboard built with React, TypeScript, and shadcn/ui components.
 
-**URL**: https://lovable.dev/projects/df4026c0-38ed-4f6c-b1d7-7ad7844efe05
+## Features
 
-## How can I edit this code?
+- **User Management**: Add, view, and manage user profiles
+- **Modern UI**: Built with shadcn/ui components and Tailwind CSS
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **TypeScript**: Full type safety and better development experience
+- **Dark/Light Theme**: Toggle between themes for better user experience
+- **Search Functionality**: Find users quickly with search capabilities
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful and accessible UI components
+- **React Router** - Client-side routing
+- **React Hook Form** - Form handling and validation
+- **Lucide React** - Beautiful icons
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/df4026c0-38ed-4f6c-b1d7-7ad7844efe05) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (version 16 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/vivekjoshi873/User-Management-Dashboard.git
+```
 
-Follow these steps:
+2. Navigate to the project directory:
+```bash
+cd User-Management-Dashboard
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Install dependencies:
+```bash
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open your browser and visit `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Layout.tsx      # Main layout component
+│   ├── SearchBar.tsx   # Search functionality
+│   ├── ThemeToggle.tsx # Theme switcher
+│   └── UserCard.tsx    # User card component
+├── contexts/           # React contexts
+│   └── UserContext.tsx # User state management
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+├── pages/              # Page components
+│   ├── Home.tsx        # Home page
+│   ├── AddUser.tsx     # Add user page
+│   ├── UserDetails.tsx # User details page
+│   └── NotFound.tsx    # 404 page
+└── main.tsx           # Application entry point
+```
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/df4026c0-38ed-4f6c-b1d7-7ad7844efe05) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
