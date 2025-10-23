@@ -45,7 +45,7 @@ const Home = () => {
           <div>
             <h2 className="text-3xl font-bold mb-2">Users</h2>
             <p className="text-muted-foreground">
-              Manage and view all users ({filteredUsers.length} total)
+              Manage and View all Users
             </p>
           </div>
           <SearchBar
