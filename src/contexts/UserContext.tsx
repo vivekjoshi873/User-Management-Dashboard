@@ -68,12 +68,11 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
   const addUser = (newUser: Omit<User, 'id'>) => {
     const user: User = {
       ...newUser,
-      id: Date.now(), // Generate unique ID
+      id: Date.now(),    
     };
     
     setUsers(prev => [user, ...prev]);
     
-    // Save to localStorage
     const localUsers = localStorage.getItem('localUsers');
     const existingLocal = localUsers ? JSON.parse(localUsers) : [];
     localStorage.setItem('localUsers', JSON.stringify([user, ...existingLocal]));
